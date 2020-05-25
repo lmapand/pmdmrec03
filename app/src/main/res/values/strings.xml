@@ -1,0 +1,55 @@
+<resources>
+    <!--Aplicacion y titulos de de Activities-->
+    <string name="app_name">PMDMREC02</string>
+    <string name="txtTituloPantallaPrincipal">"DESCONFINADOR"</string>
+    <string name="txtTituloPantallaUsuario">"Area Usuario"</string>
+    <string name="txtTituloPantallaAdministrador">"Area Administrador"</string>
+    <string name="txtTituloPantallaAsignarFase">"Asignar Fase"</string>
+    <string name="txtTituloPantallaCrearFase">"Registrar Fase"</string>
+
+    <!-- Activity Principal-->
+    <string name="txtEtqBienvenida">Bienvenidos a la Aplicación de Desconfinamiento</string>
+    <string name="txtEtqUsuario">Usuario</string>
+    <string name="txtEtqContras">Contraseña</string>
+    <string name="txtBtSelecUsuario">Entrar como usuario</string>
+    <string name="txtBtSelecAdmin">Entrar como Admin</string>
+    <string name="hintTxtUsuario">Indique aquí usuario</string>
+    <string name="hintTxtContras">Indique aqui la contraseña</string>
+    <string name="hintNFTxtCaract">Escribir aqui característica</string>
+
+    <!-- Activity Usuario-->
+    <string name="txtEtqSpinnerUsuProvincia">"Seleccionar la provincia a consultar:"</string>
+    <string name="txtBtVerFaseProvincia">"Ver Fase desconfinamiento"</string>
+    <string name="txtBtUsuarioSalir">"Salir"</string>
+
+    <!-- Activity VerProvincia -->
+    <string name="txtErrorPasoProvincia">No se pudieron recuperar los datos de la provincia</string>
+    <string name="txtEtqVPFase">Fase actual:</string>
+
+    <!-- Activity Admin-->
+    <string name="txtBtAnadirFase">Añadir Fase</string>
+    <string name="txtBtAsignarFase">Asignar Fase a Provincia</string>
+
+    <!-- Activity AsignarFase-->
+    <string name="txtEtqSpinnerAFProvincia">Seleccionar Provincia:</string>
+    <string name="txtEtqSpinnerAFFase">Seleccionar la Fase a asignar:</string>
+    <string name="txtBtAFAsignar">Asignar</string>
+
+    <!-- Activity NuevaFase -->
+    <string name="txtEtqNFSelecIDFase">Seleccionar Número de Fase:</string>
+    <string name="txtEtqListaCaracteristicas">Características:</string>
+    <string name="tttBtNFAddCaractersitca">Añadir Característica</string>
+    <string name="txtBtNFRegistrarFase">Añadir Fase</string>
+    <string name="txtEtqNFCaracteristicas"><i>(Aquí irían las caracterisitcas según se añadan en un Widget conn scroll)</i></string>
+    <!-- Dialogo 'No implementado'-->
+    <string name="txtDlgNITitulo"><i>NO SE PUEDE REGISTRAR</i></string>
+    <string name="txtDlgNITexto"><i>Esta característica aún o ha sido implementada</i></string>
+    <string name="txtDlgNIBtAceptar"><i>ACEPTAR</i></string>
+    <!-- Textos directos-->
+    <string name="txtErrorCampoVacio">Este campo no puede estar vacío</string>
+    <string name="txtErrorFalloVerificacion">Fallo de verificación: usuario y/o contraseña incorrectos</string>
+    <string name="provincia">Provincia de %1$s</string>
+    <string name="fase_asignada">Actualmente en fase %1$d</string>
+    <string name="resultado_asignacion">Asignada fase %1$d a la provincia de  %2$s</string>
+
+</resources>
