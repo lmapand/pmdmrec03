@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <!-- Variacion de estilo para el Dialogo Login -->
+    <style name="DialogoPersonalizado" parent="@style/Theme.AppCompat.Light.Dialog">
+
+        <!-- Especiicacion de que sí queremos título -->
+        <item name="android:windowNoTitle">false</item>
+    </style>
+
 </resources>

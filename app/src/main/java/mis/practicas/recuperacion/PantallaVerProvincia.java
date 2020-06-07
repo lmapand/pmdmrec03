@@ -1,16 +1,23 @@
 package mis.practicas.recuperacion;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import mis.practicas.recuperacion.modelo.Provincia;
 
 public class PantallaVerProvincia extends AppCompatActivity
 {
+    private ListView lstCaractConfinamiento;
+    
     
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -26,7 +33,16 @@ public class PantallaVerProvincia extends AppCompatActivity
         else
             this.setTitle(this.getResources().getString(R.string.provincia, p.getNombre()) );
         
-        ((ImageView)this.findViewById(R.id.imgProvincia)).setImageResource(p.getIdImagen());
+        ((ImageView)this.findViewById(R.id.imgListadoProvincia)).setImageResource(p.getIdImagen());
         ((TextView)this.findViewById(R.id.etqVPFaseConfinamiento)).setText(p.getFaseDesconfinamiento().toString());
+        
+        //Datos a cargar en la lista
+        List<String> listaCaracteristicas=new ArrayList<String>();
+        for(int x=0;x<p.getFaseDesconfinamiento().getNumeroCaracteristicas();x++)
+            listaCaracteristicas.add(p.getFaseDesconfinamiento().getCaracteristica(x));
+        
+        this.lstCaractConfinamiento=(ListView)this.findViewById(R.id.lstCaractFaseConf);
+        ArrayAdapter<String> adaptador=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listaCaracteristicas);
+        this.lstCaractConfinamiento.setAdapter(adaptador);
     }
 }

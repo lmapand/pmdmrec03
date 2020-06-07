@@ -9,12 +9,17 @@
         android:roundIcon="@mipmap/ic_lanzador_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".PantallaAltaAdmin">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".PantallaAsignarFase">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".PantallaAdmin" />
         </activity>
-        <activity android:name=".PantallaNuevaFase" >
+        <activity android:name=".PantallaNuevaFase">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".PantallaAdmin" />
